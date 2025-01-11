@@ -21,7 +21,7 @@ app.use('/api', apiRoutes);
 
 app.get("/",(req,res)=>{
   console.log("Home route");
-}));
+});
 connectToDatabase()
   .then(() => {
     app.listen(PORT, () => {
