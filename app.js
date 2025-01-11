@@ -5,7 +5,7 @@ require('./jobs/cronJob'); // Import the background job
 require('dotenv').config(); // Load environment variables
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 // Middleware to log incoming requests
 app.use((req, res, next) => {
@@ -19,11 +19,13 @@ app.use(express.json());
 // API Routes
 app.use('/api', apiRoutes);
 
+app.get("/",(req,res)=>{
+  console.log("Home route");
+}));
 connectToDatabase()
   .then(() => {
     app.listen(PORT, () => {
-      const environment = process.env.VERCEL ? 'Vercel' : 'local';
-      console.log(`Server running in ${environment} environment on port ${PORT}`);
+      console.log(`Server running on port ${PORT}`);
     });
   })
   .catch((error) => {
