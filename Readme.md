@@ -1,6 +1,11 @@
+
 # Crypto Stats API
 
 This project provides an API service to fetch and analyze cryptocurrency data using **CoinGecko**'s API. It includes background jobs to periodically update cryptocurrency information in the database and exposes endpoints for querying real-time data and statistical calculations.
+Some screenshot of working of application.
+![image](https://github.com/user-attachments/assets/37b2e381-55a7-4a9a-969d-b95602153340)
+![image](https://github.com/user-attachments/assets/bb1def1c-94b2-4fdb-8995-af9563c8670e)
+![image](https://github.com/user-attachments/assets/35b5455e-a88b-432b-8a1b-16b159015cb6)
 
 ## Features
 
